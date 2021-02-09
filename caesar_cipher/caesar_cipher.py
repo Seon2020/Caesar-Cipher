@@ -44,8 +44,7 @@ def crack(string):
     count = []
     list_of_words = words.words()
     for k in range(26):
-        decryption = decrypt(string, k)
-        text_list = decryption.split(' ')
+        text_list = decrypt(string, k).split(' ')
         for word in text_list:
             count.append(0)
             if word in list_of_words:
